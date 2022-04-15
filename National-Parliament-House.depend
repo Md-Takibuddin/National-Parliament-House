@@ -1,11 +1,12 @@
 # depslib dependency file v1.0
-1648219675 source:h:\classes\computer graphics\national-parliament-house\main.cpp
+1649956487 source:h:\classes\computer graphics\national-parliament-house\main.cpp
 	<cstdio>
 	<windows.h>
 	<math.h>
 	<stdio.h>
 	<stdlib.h>
 	<math.h>
+	"sky.cpp"
 	<GL/gl.h>
 	<GL/glut.h>
 
@@ -901,4 +902,24 @@
 
 1526093414 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\gl\glu.h
 	<GL/gl.h>
+
+1649956513 h:\classes\computer graphics\national-parliament-house\sky.cpp
+	<GL/gl.h>
+	<GL/glut.h>
+	<cstdio>
+	<windows.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1649956513 source:h:\classes\computer graphics\national-parliament-house\sky.cpp
+	<GL/gl.h>
+	<GL/glut.h>
+	<cstdio>
+	<windows.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
 
