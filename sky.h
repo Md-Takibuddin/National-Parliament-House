@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <math.h>
 
+
 void fullsky()
 {
      glLoadIdentity();
@@ -46,9 +47,10 @@ void bird()
   glEnd();
 
 }
+
 void sky1()
 {
-    // glLoadIdentity();
+
     int i;
 
 	GLfloat x=.5f; GLfloat y=.8f; GLfloat radius =.05f;
@@ -67,7 +69,6 @@ void sky1()
 	glEnd();
 
 GLfloat a=.55f; GLfloat b=.78f;
-
 	glBegin(GL_TRIANGLE_FAN);
 	    glColor3ub(30, 217, 255);
 		glVertex2f(a, b); // center of circle
@@ -123,7 +124,7 @@ GLfloat a=.55f; GLfloat b=.78f;
 
 void sky2()
 {
-    // glLoadIdentity();
+
     int i;
 
 	GLfloat x=-.5f; GLfloat y=.8f; GLfloat radius =.05f;
@@ -197,21 +198,4 @@ GLfloat a=-.55f; GLfloat b=.78f;
 }
 
 
-
-void nightsky()
-{
-     glLoadIdentity();
-    glBegin(GL_POLYGON);
-
-    glColor3ub(25,25,112);
-        glVertex2f(-1.0f, 1.0f);
-        glVertex2f(1.0f, 1.0f);
-
-    glColor3ub(100,149,237);
-        glVertex2f(1.0f, -0.5f);
-	glColor3ub(100,149,237);
-        glVertex2f(-1.0f, -0.5f);
-
-	glEnd();
-}
 
