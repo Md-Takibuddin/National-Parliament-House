@@ -1,4 +1,3 @@
-
 #include <GL/gl.h>
 #include <GL/glut.h>
 #include<cstdio>
@@ -9,10 +8,9 @@
 #include <stdlib.h>
 #include <math.h>
 
+
 void mainbuilding()
 {
-
-
 
     glBegin(GL_POLYGON);
 	glColor3ub(196,202,206);
@@ -289,6 +287,79 @@ void mainbuilding()
 		}
 	glEnd();
 
+
+}
+
+void stairs()
+{
+    glBegin(GL_POLYGON);
+	glColor3ub(150,40,27);
+	glVertex2f(-1.0f, -0.7f);
+	glVertex2f(1.0f, -.7f);
+	glVertex2f(1.0f, -.5f);
+	glVertex2f(-1.0f, -.5f);
+
+	glEnd();
+
+
+	 glBegin(GL_LINES);
+	 glLineWidth(8);
+	glColor3ub(0,0,0);
+	glVertex2f(-1.0f, -0.533f);
+	glVertex2f(1.0f, -.533f);
+
+	glColor3ub(0,0,0);
+	glVertex2f(-1.0f, -0.566f);
+	glVertex2f(1.0f, -.566f);
+
+	glColor3ub(0,0,0);
+	glVertex2f(-1.0f, -0.6f);
+	glVertex2f(1.0f, -.6f);
+
+	glColor3ub(0,0,0);
+	glVertex2f(-1.0f, -0.633f);
+	glVertex2f(1.0f, -.633f);
+
+	glColor3ub(0,0,0);
+	glVertex2f(-1.0f, -0.666f);
+	glVertex2f(1.0f, -.666f);
+
+	glColor3ub(0,0,0);
+	glVertex2f(-1.0f, -0.7f);
+	glVertex2f(1.0f, -.7f);
+
+	glColor3ub(0,0,0);
+	glVertex2f(-1.0f, -0.5f);
+	glVertex2f(1.0f, -.5f);
+
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glColor3ub(255,255,255);
+	glVertex2f(-.50f, -0.5f);
+	glVertex2f(-.53f, -.5f);
+	glVertex2f(-.63f, -.7f);
+	glVertex2f(-.60f, -.7f);
+
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glColor3ub(255,255,255);
+	glVertex2f(.50f, -0.5f);
+	glVertex2f(.53f, -.5f);
+	glVertex2f(.63f, -.7f);
+	glVertex2f(.60f, -.7f);
+
+	glEnd();
+
+	glBegin(GL_POLYGON);
+	glColor3ub(255,255,255);
+	glVertex2f(.01f, -0.5f);
+	glVertex2f(-.01f, -.5f);
+	glVertex2f(-.035f, -.7f);
+	glVertex2f(.035f, -.7f);
+
+	glEnd();
 
 
 }

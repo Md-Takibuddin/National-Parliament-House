@@ -1,12 +1,14 @@
 # depslib dependency file v1.0
-1649956487 source:h:\classes\computer graphics\national-parliament-house\main.cpp
+1650153774 source:h:\classes\computer graphics\national-parliament-house\main.cpp
 	<cstdio>
 	<windows.h>
 	<math.h>
 	<stdio.h>
 	<stdlib.h>
 	<math.h>
-	"sky.cpp"
+	"building.h"
+	"sky.h"
+	"flag.h"
 	<GL/gl.h>
 	<GL/glut.h>
 
@@ -916,6 +918,54 @@
 1649956513 source:h:\classes\computer graphics\national-parliament-house\sky.cpp
 	<GL/gl.h>
 	<GL/glut.h>
+	<cstdio>
+	<windows.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1650153834 h:\classes\computer graphics\national-parliament-house\building.h
+	<GL/gl.h>
+	<GL/glut.h>
+	<cstdio>
+	<windows.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1650130710 h:\classes\computer graphics\national-parliament-house\sky.h
+	<GL/gl.h>
+	<GL/glut.h>
+	<cstdio>
+	<windows.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1650003318 h:\classes\computer graphics\national-parliament-house\rain.h
+	<GL/gl.h>
+	<GL/glut.h>
+	<cstdio>
+	<windows.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1650128463 h:\classes\computer graphics\national-parliament-house\tree.h
+	<GL/gl.h>
+	<GL/glut.h>
+	<cstdio>
+	<windows.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1650153804 h:\classes\computer graphics\national-parliament-house\flag.h
 	<cstdio>
 	<windows.h>
 	<math.h>
