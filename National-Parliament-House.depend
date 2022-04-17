@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1650153774 source:h:\classes\computer graphics\national-parliament-house\main.cpp
+1650156681 source:h:\classes\computer graphics\national-parliament-house\main.cpp
 	<cstdio>
 	<windows.h>
 	<math.h>
@@ -9,6 +9,7 @@
 	"building.h"
 	"sky.h"
 	"flag.h"
+	"plain.h"
 	<GL/gl.h>
 	<GL/glut.h>
 
@@ -935,7 +936,7 @@
 	<stdlib.h>
 	<math.h>
 
-1650130710 h:\classes\computer graphics\national-parliament-house\sky.h
+1650156891 h:\classes\computer graphics\national-parliament-house\sky.h
 	<GL/gl.h>
 	<GL/glut.h>
 	<cstdio>
@@ -967,6 +968,13 @@
 
 1650153804 h:\classes\computer graphics\national-parliament-house\flag.h
 	<cstdio>
+	<windows.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1650156444 h:\classes\computer graphics\national-parliament-house\plain.h
 	<windows.h>
 	<math.h>
 	<stdio.h>

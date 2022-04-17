@@ -45,6 +45,7 @@
 		<Unit filename="building.h" />
 		<Unit filename="flag.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="plain.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

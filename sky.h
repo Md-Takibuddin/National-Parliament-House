@@ -9,6 +9,30 @@
 #include <math.h>
 
 
+
+void sun() {
+    glLoadIdentity();
+    glBegin(GL_POLYGON);
+    glColor3ub(255, 165, 0);
+    GLfloat x5=.7f;
+    GLfloat y5=.7f;
+    GLfloat radius5 =.07f;
+    GLfloat twicePi5 = 2.0f * PI;
+    GLfloat triangleAmount2=100;
+    glBegin(GL_TRIANGLE_FAN);
+    glVertex2f(x5, y5); // center of circle
+    for(int i = 0; i <= triangleAmount2; i++)
+    {
+        glVertex2f(
+            x5 + (radius5 * cos(i *  twicePi5 / triangleAmount2)),
+            y5 + (radius5 * sin(i * twicePi5 / triangleAmount2))
+        );
+    }
+    glEnd();
+}
+
+
+
 void fullsky()
 {
      glLoadIdentity();

@@ -1,3 +1,5 @@
+#include <GL/gl.h>
+#include <GL/glut.h>
 #include<cstdio>
 #include <windows.h>
 #include<math.h>
@@ -13,15 +15,14 @@
 float Cosinus_table[361];
 float Sinus_table[361];
 
-#define M_PI 3.14159265358979323846
 
-#define STEPS 1000
-
-#include <GL/gl.h>
-#include <GL/glut.h>
 GLfloat q=0.0f;
+
 GLfloat position = 0.0f;
 GLfloat speed = 0.01f;
+
+GLfloat position2 =0.0f;
+GLfloat speed2 = 0.01f;
 
 
 
@@ -35,28 +36,39 @@ void update(int value) {
 	glutTimerFunc(100, update, 0);
 }
 
+void update2(int value) {
+
+    if(position2>1.0)
+        position2=-1.0f;
+
+    position2+= speed2;
+    glutPostRedisplay();
+    glutTimerFunc(100, update2,0);
+}
 
 
 void display()
 {
-    glClearColor(1.0f, 1.0f, 1.0f, 1.0f); // Set background color to black and opaque
+    glClearColor(1.0f, 1.0f, 1.0f, 1.0f); // Set background color
     glClear(GL_COLOR_BUFFER_BIT);
+
     fullsky();
+    sun();
     grass();
     stairs();
     mainbuilding();
     flags();
     plain();
 
-
-
+    glLoadIdentity();
     glPushMatrix();
-    glTranslatef(position,0.0f, 0.0f);
+    glTranslatef(position,-0.1f, 0.0f);
     sky1();
     sky2();
     bird();
     glPopMatrix();
     glFlush();
+
 }
 
 

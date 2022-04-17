@@ -7,32 +7,14 @@
 
 
 
-GLfloat position6 = 0.0f;
-GLfloat speed6 = 0.1f;
-
-
-void update6(int value) {
-
-    if(position6 <- 2.50)
-        position6 = 2.50f;
-
-    position6 -= speed6;
-
-    glutPostRedisplay();
-
-
-    glutTimerFunc(200, update6, 0);
-}
-
 
 void plain(){
-glLoadIdentity();
 
 
-glPushMatrix();
- glScalef(0.4,0.4,0);
- glTranslatef(0.0f,1.5f, 0.0f);
-glTranslatef(position6, 0.0f, 0.0f);
+
+    glScalef(0.4,0.4,0);
+    glTranslatef(0.0f,1.5f, 0.0f);
+
 
     glBegin(GL_POLYGON); // airplane outer body
     glColor3ub(234, 229, 229); // white
@@ -148,6 +130,6 @@ glTranslatef(position6, 0.0f, 0.0f);
     }
     glEnd();
 
-glPopMatrix();
+
 
 }
